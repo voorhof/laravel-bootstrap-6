@@ -17,9 +17,9 @@
 
 // Subdir imports
 @forward "bootstrap/scss/content";
-//@forward "bootstrap/scss/layout";
+@forward "bootstrap/scss/layout";
 //@forward "bootstrap/scss/forms";
-//@forward "bootstrap/scss/buttons";
+@forward "bootstrap/scss/buttons";
 
 // Components
 //@forward "bootstrap/scss/accordion";

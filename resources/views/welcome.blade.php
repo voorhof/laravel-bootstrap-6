@@ -24,15 +24,19 @@
     --}}
 </head>
 <body>
-<header>
+<header class="container">
     <h1>{{ config('app.name') }}</h1>
+    <hr>
 </header>
 
-<main>
+<main class="container">
     <h2>MAIN</h2>
+    <h3>Button</h3>
+    <button type="button" class="btn theme-primary btn-solid btn-styled">Button</button>
 </main>
 
-<footer>
+<footer class="container">
+    <hr>
     <h2>FOOTER</h2>
 </footer>
 </body>
