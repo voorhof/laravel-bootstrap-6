@@ -5,11 +5,11 @@
  */
 import Alert from 'bootstrap/js/dist/alert';
 // import Button from 'bootstrap/js/dist/button';
-// import Carousel from 'bootstrap/js/dist/carousel';
+import Carousel from 'bootstrap/js/dist/carousel';
 // import Collapse from 'bootstrap/js/dist/collapse';
 // import Combobox from 'bootstrap/js/dist/combobox';
-// import Datepicker from 'bootstrap/js/dist/datepicker';
-// import Dialog from 'bootstrap/js/dist/dialog';
+import Datepicker from 'bootstrap/js/dist/datepicker';
+import Dialog from 'bootstrap/js/dist/dialog';
 // import Menu from 'bootstrap/js/dist/menu';
 // import NavOverflow from 'bootstrap/js/dist/nav-overflow';
 // import Drawer from 'bootstrap/js/dist/drawer';
