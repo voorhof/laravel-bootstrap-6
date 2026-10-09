@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
-import {bunny, google} from 'laravel-vite-plugin/fonts';
+import { google } from 'laravel-vite-plugin/fonts';
 import { FontaineTransform } from 'fontaine';
+import postcssPrefixCustomProperties from 'postcss-prefix-custom-properties';
 
 export default defineConfig({
     plugins: [
@@ -30,6 +31,17 @@ export default defineConfig({
             // },
         })
     ],
+    css: {
+        postcss: {
+            plugins: [
+                // Bootstrap 6 source uses unprefixed custom properties; add the `bs-` prefix like Bootstrap's own build
+                postcssPrefixCustomProperties({
+                    prefix: 'bs-',
+                    ignore: [/^--bs-/, /^--bd-/],
+                }),
+            ],
+        },
+    },
     server: {
         watch: {
             ignored: ['**/storage/framework/views/**'],
