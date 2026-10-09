@@ -1,20 +1,34 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
-import { bunny } from 'laravel-vite-plugin/fonts';
-import tailwindcss from '@tailwindcss/vite';
+import {bunny, google} from 'laravel-vite-plugin/fonts';
+import { FontaineTransform } from 'fontaine';
 
 export default defineConfig({
     plugins: [
         laravel({
-            input: ['resources/css/app.css', 'resources/js/app.js'],
+            input: ['resources/scss/app.scss', 'resources/js/app.js'],
             refresh: true,
             fonts: [
-                bunny('Instrument Sans', {
-                    weights: [400, 500, 600],
+                google('Geist', {
+                    weights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+                    optimizedFallbacks: FontaineTransform,
+                }),
+                google('Geist Mono', {
+                    weights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+                    optimizedFallbacks: FontaineTransform,
                 }),
             ],
         }),
-        tailwindcss(),
+        FontaineTransform.vite({
+            // You can specify fallbacks as an array (applies to all fonts)
+            fallbacks: ['BlinkMacSystemFont', 'Segoe UI', 'Helvetica Neue', 'Arial', 'Noto Sans'],
+
+            // Or as an object to configure specific fallbacks per font family
+            // fallbacks: {
+            //   Geist: ['Helvetica Neue'],
+            //   'Geist Mono': ['Courier New']
+            // },
+        })
     ],
     server: {
         watch: {
