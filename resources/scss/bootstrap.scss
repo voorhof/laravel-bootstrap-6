@@ -18,20 +18,20 @@
 // Subdir imports
 @forward "bootstrap/scss/content";
 @forward "bootstrap/scss/layout";
-//@forward "bootstrap/scss/forms";
+@forward "bootstrap/scss/forms";
 @forward "bootstrap/scss/buttons";
 
 // Components
-//@forward "bootstrap/scss/accordion";
+@forward "bootstrap/scss/accordion";
 @forward "bootstrap/scss/alert";
 //@forward "bootstrap/scss/avatar";
 //@forward "bootstrap/scss/badge";
 //@forward "bootstrap/scss/breadcrumb";
 //@forward "bootstrap/scss/chip";
 //@forward "bootstrap/scss/card";
-//@forward "bootstrap/scss/carousel";
-//@forward "bootstrap/scss/datepicker";
-//@forward "bootstrap/scss/dialog";
+@forward "bootstrap/scss/carousel";
+@forward "bootstrap/scss/datepicker";
+@forward "bootstrap/scss/dialog";
 //@forward "bootstrap/scss/menu";
 //@forward "bootstrap/scss/list-group";
 //@forward "bootstrap/scss/nav";
@@ -52,4 +52,4 @@
 @forward "bootstrap/scss/helpers";
 
 // Utilities
-//@forward "bootstrap/scss/utilities/api";
+@forward "bootstrap/scss/utilities/api";

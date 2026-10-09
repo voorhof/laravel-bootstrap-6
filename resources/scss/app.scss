@@ -85,7 +85,9 @@
     // Component tokens
     $alert-tokens: (
         --alert-margin-bottom: null,
-        //--alert-padding-x: 2rem,
-        //--alert-border-radius: 1rem,
+    ),
+
+    $carousel-tokens: (
+        --carousel-indicator-bg: var(--fg-body),
     ),
 );
