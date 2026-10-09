@@ -1,2 +1,2 @@
-// Import all of Bootstrap’s JS
-import * as bootstrap from 'bootstrap'
+// Import the Bootstrap JS stack
+import './bootstrap.js';

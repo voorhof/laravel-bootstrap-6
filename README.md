@@ -57,7 +57,6 @@ npm install bootstrap@6.0.0-alpha.1
 - Modified `app.js` and `app.scss`
 - Updated `vite.config.js`
 - Updated welcome blade with bootstrap styles
-- Run the application
 
 
 ## License
